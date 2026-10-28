@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Mania</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="game-card">
+        <div class="tag">🎲 THE DICE ARE CALLING</div>
+
+        <h1>Dice Roll <span>Mania!</span></h1>
+        <p class="subtitle">Roll the dice. Test your luck.</p>
+
+        <div class="dice-container">
+            <div class="die" id="die1" aria-label="First die">⚀</div>
+            <div class="die" id="die2" aria-label="Second die">⚀</div>
+        </div>
+
+        <h2 id="result" aria-live="polite">Ready to roll?</h2>
+        <p id="total">TOTAL: —</p>
+
+        <div class="buttons">
+            <button id="rollOne" class="button-one">
+                🎲 Roll One Die
+            </button>
+
+            <button id="rollTwo" class="button-two">
+                🎲 Roll Two Dice
+            </button>
+        </div>
+
+        <div class="history-header">
+            <h3>🏆 Recent Rolls</h3>
+            <button id="clearHistory" class="clear-button">
+                Clear
+            </button>
+        </div>
+
+        <ol id="history" class="history">
+            <li class="empty-history">Your first roll is waiting!</li>
+        </ol>
+
+        <p class="footer">Made with 💜 and a little bit of luck</p>
+    </main>
+</body>
+</html>
